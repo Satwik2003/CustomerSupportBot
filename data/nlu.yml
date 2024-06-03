@@ -89,3 +89,352 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: question_1
+  examples: |
+    - Why am I unable to view files?
+    - Why are my files not showing up?
+    - Why can't I see my files?
+    - Why are my files not visible?
+    - Why are my files not appearing?
+    - Why can't I find my files?
+    - Why are files missing from my account?
+    - Why are my files hidden?
+    - Why is my file list empty?
+    - Why are my uploaded files not displaying?
+
+- intent: question_2
+  examples: |
+    - Why am I unable to download files?
+    - I'm having trouble downloading files. Can you help?
+    - Why can't I download files?
+    - What should I do if I can't download a file?
+    - I'm unable to download files. Any suggestions?
+    - The files won't download. What's the issue?
+    - How come I can't download files from your site?
+    - Can you tell me why I can't download any files?
+    - I keep getting an error when I try to download files. Why?
+    - Downloading files isn't working for me. What's going wrong?
+
+- intent: question_3
+  examples: |
+    - Why am I unable to upload files?
+    - Why can't I upload files?
+    - Why are my files not uploading?
+    - Why are my uploads failing?
+    - Why is the file upload not working?
+    - Why can't I upload a file?
+    - Why won't my files upload?
+    - Why is the file upload failing?
+    - Why am I having trouble uploading files?
+    - Why does the file upload fail?
+
+- intent: question_4
+  examples: |
+    - Why am I unable to sync files?
+    - Why can't I sync my files?
+    - I'm having trouble syncing files. Can you help?
+    - What could be the reason I can't sync files?
+    - I'm unable to sync my files. Any advice?
+    - The files won't sync. What's the issue?
+    - How come I can't sync my files?
+    - Can you explain why my files won't sync?
+    - I keep getting an error when I try to sync files. Why?
+    - Syncing files isn't working for me. What's going wrong?
+
+- intent: question_5
+  examples: |
+    - The payment was successful, but why hasn't the license been renewed?
+    - Why isn't my license renewed after successful payment?
+    - Why is my license renewal pending despite payment?
+    - I paid, but my license is not renewed yet.
+    - Why hasn't my license updated after payment?
+    - Why is my license not active after payment?
+    - Payment was successful, but license status hasn't changed.
+    - Why hasn't the license activation occurred after payment?
+    - Why is my license renewal delayed after payment?
+    - I completed the payment, why is my license still inactive?
+
+- intent: question_6
+  examples: |
+    - Why does it show 10 lakh for 10 years?
+    - Can you explain why the amount is 10 lakh for 10 years?
+    - I'm confused about why it says 10 lakh for 10 years. Why is that?
+    - Why does the system display 10 lakh for 10 years?
+    - What's the reason behind it showing 10 lakh for 10 years?
+    - Can you tell me why it's 10 lakh for 10 years?
+    - Why does it indicate 10 lakh for a 10-year period?
+    - Could you explain why 10 lakh is shown for 10 years?
+    - I'm seeing 10 lakh for 10 years. Why is that happening?
+    - Why is it showing 10 lakh for 10 years?
+
+- intent: question_7
+  examples: |
+    - Why were files deleted from DigiBoxx?
+    - Why did my files get deleted from DigiBoxx?
+    - Why are my files missing from DigiBoxx?
+    - Why were my DigiBoxx files removed?
+    - Why can't I find my files on DigiBoxx?
+    - Why did DigiBoxx delete my files?
+    - Why have my files disappeared from DigiBoxx?
+    - Why are my files not in DigiBoxx anymore?
+    - Why were my files erased from DigiBoxx?
+    - Why are my files gone from DigiBoxx?
+  
+- intent: question_8
+  examples: |
+    - Why is DigiBoxx's GST amount not reflecting in our GST 2B portal?
+    - Why isn't DigiBoxx's GST amount showing in our GST 2B portal?
+    - Can you tell me why DigiBoxx's GST isn't appearing in our GST 2B?
+    - Why is the GST amount from DigiBoxx not reflecting in our GST 2B?
+    - I'm not seeing DigiBoxx's GST amount in our GST 2B portal. Why?
+    - What could be the reason DigiBoxx's GST isn't showing up in our GST 2B?
+    - Can you explain why DigiBoxx's GST is missing from our GST 2B portal?
+    - Why does DigiBoxx's GST amount not appear in our GST 2B?
+    - We're having an issue with DigiBoxx's GST not reflecting in our GST 2B. Any ideas why?
+    - Why isn't DigiBoxx's GST amount appearing in our GST 2B portal?
+
+- intent: question_9
+  examples: |
+    - Why doesn't DigiBoxx have a feature to store documents in one place like DigiFotos?
+    - Why can't I store documents in one place on DigiBoxx like DigiFotos?
+    - Why is there no single storage for documents on DigiBoxx like DigiFotos?
+    - Why doesn't DigiBoxx offer a unified document storage feature like DigiFotos?
+    - Why isn't there a central document storage option on DigiBoxx like DigiFotos?
+    - Why can't I organize documents in one location on DigiBoxx like DigiFotos?
+    - Why doesn't DigiBoxx consolidate documents like DigiFotos does with photos?
+    - Why can't DigiBoxx store all documents together like DigiFotos?
+    - Why isn't there a document hub on DigiBoxx like DigiFotos for photos?
+    - Why does DigiBoxx lack a single storage feature for documents like DigiFotos?
+
+- intent: question_10
+  examples: |
+    - Why can't downloaded files be opened?
+    - Why won't the downloaded files open?
+    - I can't open the files I downloaded. Why?
+    - What could be the reason the downloaded files can't be opened?
+    - Why are the files I downloaded not opening?
+    - Can you help me understand why downloaded files won't open?
+    - I'm having trouble opening downloaded files. Any idea why?
+    - Why do the files I downloaded fail to open?
+    - Could you explain why I can't open downloaded files?
+    - Downloaded files aren't opening for me. What's the issue?
+
+- intent: question_11
+  examples: |
+    - Is there any discount available for renewal?
+    - Are there any renewal discounts?
+    - Can I get a discount on renewing my subscription?
+    - Are renewal discounts offered?
+    - Is there a discount for renewing my subscription?
+    - Do you provide discounts on renewal?
+    - Are there special offers for subscription renewal?
+    - Is there a renewal discount available?
+    - Are there promotions for renewing my subscription?
+    - Do you offer any deals for subscription renewal?
+
+- intent: question_12
+  examples: |
+    - Why are some files missing?
+    - Why can't I find some files?
+    - Why are some of my files missing?
+    - Can you tell me why certain files are not there?
+    - What happened to some of my files? They're missing.
+    - Why are a few files not showing up?
+    - I seem to be missing some files. Any idea why?
+    - Some files aren't appearing. Why is that?
+    - Why can't I see all my files?
+    - Can you help me understand why some files have disappeared?
+
+- intent: question_13
+  examples: |
+    - Why isn't the UPI payment option available?
+    - Why can't I use UPI to make a payment?
+    - Why is UPI payment not an option?
+    - Why is the UPI payment method missing?
+    - Why can't I pay using UPI?
+    - Why isn't UPI supported for payments?
+    - Why can't I see the UPI payment option?
+    - Why is UPI not available for my payment?
+    - Why is the UPI option not shown?
+    - Why is there no UPI payment method?
+  
+- intent: question_14
+  examples: |
+    - Why does uploading speed vary compared to other cloud platforms?
+    - Why is the upload speed different compared to other cloud platforms?
+    - Can you tell me why uploading speed varies from other cloud services?
+    - Why does my upload speed change compared to other cloud platforms?
+    - What causes the upload speed to differ from other cloud platforms?
+    - Why is there a variation in upload speed when compared to other clouds?
+    - How come the upload speed isn't consistent with other cloud services?
+    - Can you explain why the upload speed is slower/faster than on other cloud platforms?
+    - Why do I experience different upload speeds compared to other cloud providers?
+    - What makes the upload speed vary from other cloud storage platforms?
+
+- intent: question_15
+  examples: |
+    - Why can't I change my plan from yearly to monthly?
+    - Why am I unable to switch from yearly to monthly plan?
+    - Why is it not possible to change my subscription from yearly to monthly?
+    - Why can't I downgrade my plan from yearly to monthly?
+    - Why can't I modify my subscription from yearly to monthly?
+    - Why is changing from a yearly plan to a monthly plan not allowed?
+    - Why is the option to switch from yearly to monthly plan unavailable?
+    - Why can't I convert my yearly plan to a monthly plan?
+    - Why is there no option to change from yearly to monthly subscription?
+    - Why can't I adjust my plan from yearly to monthly?
+
+- intent: question_16
+  examples: |
+    - Why does auto-sync automatically enable after disabling it?
+    - Why does auto-sync turn on again after I disable it?
+    - Can you tell me why auto-sync re-enables itself after being turned off?
+    - Why does auto-sync keep enabling itself after I disable it?
+    - What causes auto-sync to automatically enable after I disable it?
+    - Why does auto-sync switch back on after I turn it off?
+    - How come auto-sync turns itself on again after I disable it?
+    - Can you explain why auto-sync reactivates after I turn it off?
+    - Why does auto-sync enable itself automatically after I disable it?
+    - I'm having an issue with auto-sync re-enabling after I disable it. Why?
+
+- intent: question_17
+  examples: |
+    - Why am I unable to renew my license from the mobile app?
+    - Why can't I renew my license using the mobile app?
+    - Why is license renewal not available on the mobile app?
+    - Why am I unable to upgrade my license from the app?
+    - Why can't I perform license renewal on the mobile app?
+    - Why is the option to renew my license missing from the mobile app?
+    - Why can't I extend my license through the mobile application?
+    - Why am I unable to upgrade my account from the mobile app?
+    - Why is license renewal restricted to the web portal?
+    - Why is the mobile app not allowing me to renew my license?
+
+- intent: question_18
+  examples: |
+    - Why am I unable to log in to my DigiBoxx account?
+    - Why can't I log in to my DigiBoxx account?
+    - I'm having trouble logging into my DigiBoxx account. Can you help?
+    - What could be the reason I'm unable to access my DigiBoxx account?
+    - Why am I locked out of my DigiBoxx account?
+    - I'm unable to sign in to my DigiBoxx account. Any idea why?
+    - Can you explain why I can't access my DigiBoxx account?
+    - Why won't my DigiBoxx account let me log in?
+    - I keep getting an error when trying to log in to my DigiBoxx account. Why?
+    - Why is my DigiBoxx login not working?
+    
+- intent: question_19
+  examples: |
+    - Why isn't Gmail integration available?
+    - Why can't I integrate Gmail?
+    - Why is Gmail integration not an option?
+    - Why isn't Gmail integration offered?
+    - Why can't I connect Gmail to the platform?
+    - Why is Gmail integration unavailable?
+    - Why doesn't the platform support Gmail integration?
+    - Why am I unable to link Gmail to the platform?
+    - Why is there no option for Gmail integration?
+    - Why isn't there a Gmail integration feature?
+  
+- intent: question_20
+  examples: |
+    - Why are some photos still available in DigiFotos after moving them?
+    - Why are some photos still in DigiFotos after I moved them?
+    - Can you tell me why photos remain in DigiFotos after moving them?
+    - Why didn't all my photos disappear from DigiFotos after I moved them?
+    - What causes some photos to stay in DigiFotos even after moving them?
+    - Why do some photos still show up in DigiFotos after being moved?
+    - How come some of my photos are still in DigiFotos after I moved them?
+    - Can you explain why certain photos are still in DigiFotos after moving?
+    - Why didn't moving my photos remove them from DigiFotos?
+    - I'm seeing photos in DigiFotos even after moving them. Why?
+
+- intent: question_21
+  examples: |
+    - Why are thumbnails missing for some files?
+    - Why aren't thumbnails showing up for certain files?
+    - Why are some file thumbnails not visible?
+    - Why can't I see thumbnails for specific files?
+    - Why are thumbnails not appearing for certain files?
+    - Why are some file previews missing?
+    - Why aren't thumbnails loading for some files?
+    - Why am I unable to view thumbnails for certain files?
+    - Why are thumbnails not displaying properly for some files?
+    - Why do some files lack thumbnails?
+
+- intent: question_22
+  examples: |
+    - Why can't I upload multiple files in DigiFotos?
+    - Why is it not letting me upload more than one file at a time on DigiFotos?
+    - I'm having trouble uploading multiple photos simultaneously on DigiFotos. What's the issue?
+    - How come I can't upload a batch of pictures on the DigiFotos platform?
+    - The DigiFotos website doesn't seem to allow me to select and upload several image files together. Is there a problem?
+    - I need to upload a bunch of photos to DigiFotos, but it only lets me do one at a time. What's going on?
+    - Can you explain why DigiFotos doesn't have an option to upload multiple files concurrently?
+    - I'm trying to upload a folder of images to DigiFotos, but it won't let me. Why is that?
+    - Is there a limitation on the number of files I can upload at once on DigiFotos? I'm only able to do one.
+    - Hey there, I'm having an issue with your DigiFotos service. It seems like I can only upload one photo at a time instead of being able to select and upload multiple files together. Could you clarify why this is happening?
+
+- intent: question_23
+  examples: |
+    - Why am I unable to view .docx and .doc files in DigiBoxx?
+    - Why can't I open .docx and .doc files in DigiBoxx?
+    - Why are .docx and .doc files not accessible in DigiBoxx?
+    - Why do .docx and .doc files not display in DigiBoxx?
+    - Why can't I see the content of .docx and .doc files in DigiBoxx?
+    - Why aren't .docx and .doc files supported in DigiBoxx?
+    - Why do .docx and .doc files appear as unreadable in DigiBoxx?
+    - Why am I unable to preview .docx and .doc files in DigiBoxx?
+    - Why don't .docx and .doc files render properly in DigiBoxx?
+    - Why is DigiBoxx unable to show the contents of .docx and .doc files?
+
+- intent: question_24
+  examples: |
+    - Why is there no option to downgrade my plan?
+    - Why can't I find the option to downgrade my plan?
+    - Why is there no way to downgrade my plan?
+    - How come there's no option to downgrade my plan?
+    - Can you explain why I can't downgrade my plan?
+    - Why isn't there a downgrade option for my plan?
+    - What happened to the option to downgrade my plan?
+    - Why am I unable to downgrade my plan?
+    - Is there a reason I can't downgrade my plan?
+    - Why don't I see an option to downgrade my plan?
+
+- intent: question_25
+  examples: |
+    - If I lose my mobile, will I be able to restore my data on the new device?
+    - Can I recover my data on a new device if I lose my mobile?
+    - Will I lose my data if my mobile is lost or stolen?
+    - Is it possible to retrieve my data on another device if my mobile is lost?
+    - What happens to my data if I lose my mobile?
+    - Can I access my data on a new device if my mobile is lost or damaged?
+    - How can I recover my data if I lose my mobile phone?
+    - Will my data be safe if I lose my mobile device?
+    - Can I transfer my data to a new device if my mobile is lost?
+    - What are the steps to restore my data on a new device if I lose my mobile?
+  
+- intent: question_26
+  examples: |
+    - Why does it ask us to download the DigiBoxx app when we try to open a shared link in a mobile browser?
+    - Why do I need to download the DigiBoxx app to open a shared link in my mobile browser?
+    - Why is there a requirement to download the DigiBoxx app to view shared links on mobile?
+    - Why can't I open a shared DigiBoxx link in my mobile browser without downloading the app?
+    - What is the reason for needing to download the DigiBoxx app to open shared links on my phone?
+    - Why am I being directed to download the DigiBoxx app when I try to access a shared link on mobile?
+    - Why does opening a shared DigiBoxx link on my mobile browser require downloading the app?
+    - Why does a shared link prompt me to get the DigiBoxx app on my phone?
+  
+- intent: question_27
+  examples: |
+    - Want API for Digiboxx to use as a storage platform for my application?
+    - How can I integrate Digiboxx as a storage solution for my application?
+    - Is there an API available for integrating Digiboxx with my application?
+    - Can I use Digiboxx as a storage service for my application through an API?
+    - How do I access the Digiboxx API for my application?
+    - What are the steps to integrate Digiboxx into my application using an API?
+    - Does Digiboxx offer an API for developers to use as a storage platform?
+    - Where can I find documentation for the Digiboxx API for application integration?
+    - Can I connect my application to Digiboxx via an API for storage purposes?
+    - What are the requirements for accessing the Digiboxx API for my application?
