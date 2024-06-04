@@ -8,33 +8,33 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
-  - ask_download
-  - sync_files
-  - amount
-  - GST_info
-  - downloadfiles_issue
-  - missing_files
-  - upload_speed
-  - auto_sync
-  - digifotos_issue
-  - digiboxx_account
-  - digifotos_upload
-  - view_files
-  - upload_files
-  - license_renewal
-  - deleted_files
-  - single_storage
-  - renewal_discount
-  - upi_payment
-  - plan_change
-  - license_renewal
-  - gmail_itegration
-  - missing_thumbnails
-  - docdocx_issue
-  - data_restoration
-  - api_integration
-  - plan_downgrade
-  - download_digiboxx
+  - question_2
+  - question_4
+  - question_6
+  - question_8
+  - question_10
+  - question_12
+  - question_14
+  - question_16
+  - question_20
+  - question_18
+  - question_22
+  - question_1
+  - question_3
+  - question_5
+  - question_7
+  - question_9
+  - question_11
+  - question_13
+  - question_15
+  - question_17
+  - question_19
+  - question_21
+  - question_23
+  - question_25
+  - question_27
+  - question_24
+  - question_26
 
 
 responses:
@@ -57,85 +57,85 @@ responses:
   utter_iamabot:
     - text: "I am a bot, powered by Rasa."
 
-  utter_ask_download:
+  utter_2:
     - text: "Ensure you have a stable internet connection. Poor network connectivity can prevent files from downloading. If the issue persists, try using a different browser or clear your browser cache and cookies. If you still encounter problems, please contact our support team for further assistance."
 
-  utter_sync_files:
+  utter_4:
     - text: "Ensure that you have a stable internet connection as syncing requires a continuous network connection. Additionally, verify that you have sufficient storage space both locally and in your cloud account. If the issue persists, try restarting the sync process or logging out and back into your account. If you still encounter problems, please contact our support team for further assistance."
 
-  utter_amount:
+  utter_6:
     - text: "The amount of 10 lakh for 10 years likely reflects a specific calculation or plan associated with a financial product, such as an investment, loan, or insurance policy. Please refer to the detailed terms and conditions of the product for a comprehensive explanation, or contact our support team for further clarification."
 
-  utter_GST_info:
+  utter_8:
     - text: "This issue needs to be discussed with the support team for resolution."
 
-  utter_downloadfiles_issue:
+  utter_10:
     - text: "The downloaded files may not open due to compatibility issues, corruption during download, or lack of necessary software to open the file type. Ensure the download completed successfully, try using a different application to open the file, and verify that your software is up to date. If the problem persists, consider re-downloading the files or contacting support for further assistance."
 
-  utter_missing_files:
+  utter_12:
     - text: " Some files may be missing due to accidental deletion, incomplete uploads, syncing issues, or they may be stored in a different location. Check the "Recycle Bin" or "Trash" to see if the files were accidentally deleted, ensure your device is properly synced, and search in all relevant folders. If the files are still missing, please contact support for further assistance."
 
-  utter_upload_speed:
+  utter_14:
     - text: "Upload speeds can vary between cloud platforms due to differences in server infrastructure, network congestion, geographical server locations, and the efficiency of the service's data transfer protocols. Factors such as your own internet connection speed and network conditions can also impact upload performance. For a consistent experience, ensure you have a stable internet connection and try uploading during off-peak hours."
 
-  utter_auto_sync:
+  utter_16:
     - text: "Ensure that you have disabled auto-sync correctly within the app's settings. If the issue persists, try restarting your device to resolve potential app glitches, ensure you are using the latest version of the app, and clear the app's cache and data to reset its settings and resolve auto-sync issues."
 
-  utter_digiboxx_account:
+  utter_18:
     - text: "If you're unable to log in to your DigiBoxx account, double-check your username and password for accuracy. Also, ensure that you have a stable internet connection. If the issue persists, try resetting your password or clearing your browser cache and cookies. If you're still unable to log in, contact DigiBoxx support for further assistance."
 
-  utter_digifotos_issue:
+  utter_20:
     - text: "If some photos are still appearing in DigiFotos after being moved, it's possible that the move process encountered errors or delays. Double-check the destination folder to ensure the photos were moved successfully. Also, refresh the DigiFotos app or website to see if the changes take effect. If the issue persists, try moving the photos again or contact DigiFotos support for assistance."
 
-  utter_digifotos_upload:
+  utter_22:
     - text: "There is a capping of up to 2 GB of files or folders at a time. For premium users, the limit is extended to 10 GB. Make sure your internet connection is stable, and verify that you have enough storage space in your account to accommodate the files. If the issue persists, consider upgrading to a premium account or contact DigiFotos support for further assistance."
 
-  utter_view_files:
+  utter_1:
     - text: "If you're experiencing issues with viewing files, first, check if specific files or all files are not visible. Verify if files are visible on a particular platform (Web or Mobile app). If files are not visible on any platform, please contact the support team for further assistance."
 
-  utter_upload_files:
+  utter_3:
     - text: "For uploading files, ensure to check the file extension as the system does not allow uploading certain extensions (e.g., .exe). Additionally, ensure the file or folder size does not exceed the 10 GB limit and address any error messages or notifications to troubleshoot the issue more effectively."
 
-  utter_license_renewal:
+  utter_5:
     - text: "Regarding the payment process, it typically takes 24-48 hours for the payment to process. Check with your bank if the transaction fails, and on successful payment, you will receive a receipt and invoice."
 
-  utter_deleted_files:
+  utter_7:
     - text: "Deleted files from DigiBoxx can be found in the "Recycle Bin" in the account section"
   
-  utter_single_storage:
+  utter_9:
     - text: "While DigiBoxx may not have a feature to store documents in one place like DigiFotos, you can create a folder in "MY BOXX" and store documents there. DigiFotos works on auto-sync with the device gallery."
 
-  utter_renewal_discount:
+  utter_11:
     - text: "For renewal discounts, periodic special offers and promotions are released for users, including discounts on renewal and new subscriptions, which can be found in “View Offers” while adding the subscription plan."
 
-  utter_upi_payment:
+  utter_13:
     - text: "The UPI payment option may currently be unavailable, but alternative payment methods including credit card and net banking are offered."
 
-  utter_plan_change:
+  utter_15:
     - text: "As per company policy, subscription plans cannot be downgraded from yearly to monthly."
 
-  utter_license_renewal:
+  utter_17:
     - text: "Account renewal and upgrade are performed through the web portal only, not from the mobile app."
 
-  utter_gmail_itegration:
+  utter_19:
     - text: "For Gmail integration, it works after installing the required plugin."
 
-  utter_missing_thumbnails:
+  utter_21:
     - text: "If thumbnails are missing for some files, refresh the page to see if the thumbnails appear correctly. Clear your browser cache and cookies, and if the thumbnails are still missing, try re-uploading the affected files with a stable internet connection."
 
-  utter_docdocx_issue:
+  utter_23:
     - text: "The technical team is actively working on implementing the feature to view .docx and .doc files directly within DigiBoxx. Meanwhile, please download the file to view its content."
 
-  utter_data_restoration:
+  utter_25:
     - text: "If you lose your mobile, you can restore your data as it is stored in the cloud and not on your phone memory."
 
-  utter_api_integration:
+  utter_27:
     - text: " For accessing the API for Digiboxx as a storage platform for your application, as per company policy, only partner APIs are provided, and to become a partner, one must purchase at least 50TB of space."
 
-  utter_plan_downgrade:
+  utter_24:
     - text: "As per company policy, subscription plans cannot be downgraded."
 
-  utter_download_digiboxx:
+  utter_26:
     - text: "For security reasons, we have temporarily disabled the ability to open shared links directly in the DigiBoxx app from mobile browsers. To access the shared file, enable the desktop view in your browser settings and then proceed to open the shared link. This workaround allows you to access the shared content without downloading the DigiBoxx app."
 
 
