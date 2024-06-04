@@ -11,3 +11,138 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: Q1
+  steps:
+  - intent: question_1
+  - action: utter_1
+
+- rule: Q2
+  steps:
+  - intent: question_2
+  - action: utter_2
+
+- rule: Q3
+  steps:
+  - intent: question_3
+  - action: utter_3
+
+- rule: Q4
+  steps:
+  - intent: question_4
+  - action: utter_4
+
+- rule: Q5
+  steps:
+  - intent: question_5
+  - action: utter_5
+
+- rule: Q6
+  steps:
+  - intent: question_6
+  - action: utter_6
+
+- rule: Q7
+  steps:
+  - intent: question_7
+  - action: utter_7
+
+- rule: Q8
+  steps:
+  - intent: question_8
+  - action: utter_8
+
+- rule: Q9
+  steps:
+  - intent: question_9
+  - action: utter_9
+
+- rule: Q10
+  steps:
+  - intent: question_10
+  - action: utter_10
+
+- rule: Q11
+  steps:
+  - intent: question_11
+  - action: utter_11
+
+- rule: Q12
+  steps:
+  - intent: question_12
+  - action: utter_12
+
+- rule: Q13
+  steps:
+  - intent: question_13
+  - action: utter_13
+
+- rule: Q14
+  steps:
+  - intent: question_14
+  - action: utter_14
+
+- rule: Q15
+  steps:
+  - intent: question_15
+  - action: utter_15
+
+- rule: Q16
+  steps:
+  - intent: question_16
+  - action: utter_16
+
+- rule: Q17
+  steps:
+  - intent: question_17
+  - action: utter_17
+
+- rule: Q18
+  steps:
+  - intent: question_18
+  - action: utter_18
+
+- rule: Q19
+  steps:
+  - intent: question_19
+  - action: utter_19
+
+- rule: Q20
+  steps:
+  - intent: question_20
+  - action: utter_20
+
+- rule: Q21
+  steps:
+  - intent: question_21
+  - action: utter_21
+
+- rule: Q22
+  steps:
+  - intent: question_22
+  - action: utter_22
+
+- rule: Q23
+  steps:
+  - intent: question_23
+  - action: utter_23
+
+- rule: Q24
+  steps:
+  - intent: question_24
+  - action: utter_24
+
+- rule: Q25
+  steps:
+  - intent: question_25
+  - action: utter_25
+
+- rule: Q26
+  steps:
+  - intent: question_26
+  - action: utter_26
+
+- rule: Q27
+  steps:
+  - intent: question_27
+  - action: utter_27
