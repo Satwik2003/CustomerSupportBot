@@ -73,7 +73,7 @@ responses:
     - text: "The downloaded files may not open due to compatibility issues, corruption during download, or lack of necessary software to open the file type. Ensure the download completed successfully, try using a different application to open the file, and verify that your software is up to date. If the problem persists, consider re-downloading the files or contacting support for further assistance."
 
   utter_12:
-    - text: " Some files may be missing due to accidental deletion, incomplete uploads, syncing issues, or they may be stored in a different location. Check the "Recycle Bin" or "Trash" to see if the files were accidentally deleted, ensure your device is properly synced, and search in all relevant folders. If the files are still missing, please contact support for further assistance."
+    - text: "Some files may be missing due to accidental deletion, incomplete uploads, syncing issues, or they may be stored in a different location. Check the 'Recycle Bin' or 'Trash' to see if the files were accidentally deleted, ensure your device is properly synced, and search in all relevant folders. If the files are still missing, please contact support for further assistance."
 
   utter_14:
     - text: "Upload speeds can vary between cloud platforms due to differences in server infrastructure, network congestion, geographical server locations, and the efficiency of the service's data transfer protocols. Factors such as your own internet connection speed and network conditions can also impact upload performance. For a consistent experience, ensure you have a stable internet connection and try uploading during off-peak hours."
@@ -100,10 +100,10 @@ responses:
     - text: "Regarding the payment process, it typically takes 24-48 hours for the payment to process. Check with your bank if the transaction fails, and on successful payment, you will receive a receipt and invoice."
 
   utter_7:
-    - text: "Deleted files from DigiBoxx can be found in the "Recycle Bin" in the account section"
+    - text: "Deleted files from DigiBoxx can be found in the 'Recycle Bin' in the account section"
   
   utter_9:
-    - text: "While DigiBoxx may not have a feature to store documents in one place like DigiFotos, you can create a folder in "MY BOXX" and store documents there. DigiFotos works on auto-sync with the device gallery."
+    - text: "While DigiBoxx may not have a feature to store documents in one place like DigiFotos, you can create a folder in 'MY BOXX' and store documents there. DigiFotos works on auto-sync with the device gallery."
 
   utter_11:
     - text: "For renewal discounts, periodic special offers and promotions are released for users, including discounts on renewal and new subscriptions, which can be found in “View Offers” while adding the subscription plan."
