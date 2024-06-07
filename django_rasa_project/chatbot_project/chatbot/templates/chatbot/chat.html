@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'chatbot/style.css' %}">
+    <script>
+        async function sendMessage() {
+            const message = document.getElementById('userInput').value;
+            const response = await fetch('/chatbot/webhook/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRFToken': '{{ csrf_token }}'
+                },
+                body: JSON.stringify({ message })
+            });
+            const data = await response.json();
+            const chat = document.getElementById('chat');
+            chat.innerHTML += `<div>User: ${message}</div>`;
+            data.forEach(msg => {
+                chat.innerHTML += `<div>DigiBot: ${msg.text}</div>`;
+            });
+        }
+
+        function userInput() {
+            const userInput = document.getElementById('userInput');
+            userInput.value = '';
+        }
+
+        function clearChat() {
+            const clearChat = document.getElementById('chat');
+            clearChat.innerHTML = '';
+        }
+    </script>
+</head>
+
+<body>
+    <span id="digiboxx">
+		<b>
+		D<span style="font-size: 25px">I</span>G<span style="font-size: 25px">I</span>BOXX
+		</b>
+	</span>
+    <br>
+    <span id="digibot">Welcome to DigiBot!</span>
+    <div id="chat"></div>
+
+    <input type="text" id="userInput" placeholder="Messagee DigiBot">
+    <div class="input-container">
+        <button onclick="sendMessage()">Send</button>
+        <button onclick="userInput()">Clear Input</button>
+        <button onclick="clearChat()">Clear Chat</button>
+    </div>
+
+</body>
+
+</html>
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap');
+
+    #digiboxx {
+        background: #0000ec;
+        text-align: center;
+        width: 6em;
+        border-radius: 10px;
+        /* border: 2px red solid; */
+        font-family: "Palanquin", sans-serif;
+        font-weight: 600;
+        font-style: italic;
+        color: white;
+		font-size: 30px;
+    }
+	
+	#digiboxx span {
+		font: 5px; 
+		color: yellow;
+	}
+
+    #digibot {
+        font-family: sans-serif;
+        color: black;
+        font-size: 20px;
+    }
+
+    body {
+        font-family: Arial, sans-serif, monospace;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background-color: #e6f7ff;
+    }
+
+    #chat {
+        border-radius: 5px;
+        width: 80%;
+        height: 60%;
+        overflow-y: scroll;
+        /* scrollbar-width: none; */
+        padding: 10px;
+        color: white;
+        background: #0000ec;
+        margin-bottom: 10px;
+    }
+
+    .input-container {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    input {
+        color: rgb(66, 66, 66);
+        height: 5%;
+        width: 79%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: none;
+        background-color: #ECECEC;
+        border-radius: 7px;
+    }
+	
+	::placeholder {
+		color: grey;
+	}
+
+    .button-container {
+        width: 80%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    button {
+        font-family: monospace;
+        font-size: 15px;
+        padding: 13px 20px 13px 25px;
+        border: none;
+        border-radius: 10px;
+        background: #0000ec;
+        color: white;
+        cursor: pointer;
+    }
+	
+	button:hover {
+		background: white;
+        color: black;
+		border: 1px blue solid;
+	}
+</style>
