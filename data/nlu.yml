@@ -438,3 +438,14 @@ nlu:
     - Where can I find documentation for the Digiboxx API for application integration?
     - Can I connect my application to Digiboxx via an API for storage purposes?
     - What are the requirements for accessing the Digiboxx API for my application?
+
+- intent: out_of_scope
+  examples: |
+    - Who is Tom cruise?
+    - Are you a moron?
+    - Who is your operator?
+    - What should I do with my life?
+    - Is this going to help me in my life?
+    - Have you watched movies?
+    - Are you mad?
+

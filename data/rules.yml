@@ -146,3 +146,13 @@ rules:
   steps:
   - intent: question_27
   - action: utter_27
+
+- rule: Handle out of scope questions
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+
+- rule: Handle questions with low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: utter_fallback_question
