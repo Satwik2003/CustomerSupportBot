@@ -5,8 +5,6 @@ intents:
   - goodbye
   - affirm
   - deny
-  - mood_great
-  - mood_unhappy
   - bot_challenge
   - question_2
   - question_4
@@ -35,15 +33,12 @@ intents:
   - question_27
   - question_24
   - question_26
+  - out_of_scope
 
 
 responses:
   utter_greet:
     - text: "Hey! How are you?"
-
-  utter_cheer_up:
-    - text: "Here is something to cheer you up:"
-      image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
     - text: "Did that help you?"
@@ -55,7 +50,7 @@ responses:
     - text: "Bye"
 
   utter_iamabot:
-    - text: "I am a bot, powered by Rasa."
+    - text: "I am a customer support bot made for providing service to customers of DigiBoxx. Feel free to ask me any questions related to DigibBoxx or services provided by them. I will be glad to answer!"
 
   utter_2:
     - text: "Ensure you have a stable internet connection. Poor network connectivity can prevent files from downloading. If the issue persists, try using a different browser or clear your browser cache and cookies. If you still encounter problems, please contact our support team for further assistance."
@@ -138,6 +133,11 @@ responses:
   utter_26:
     - text: "For security reasons, we have temporarily disabled the ability to open shared links directly in the DigiBoxx app from mobile browsers. To access the shared file, enable the desktop view in your browser settings and then proceed to open the shared link. This workaround allows you to access the shared content without downloading the DigiBoxx app."
 
+  utter_out_of_scope:
+    - text: "I am not sure if I can handle that request. Please ask questions about any technical support you need in using DigiBoxx."
+  
+  utter_fallback_question:
+    - text: "I am not sure if I can handle that fallback request. Please ask questions about any technical support you need in using DigiBoxx."
 
 
 
