@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -20,9 +20,13 @@
             });
             const data = await response.json();
             const chat = document.getElementById('chat');
-            chat.innerHTML += `<div>User: ${message}</div>`;
+            chat.innerHTML += `<div id="user_chat">
+                                <span>User: ${message}</span>
+                                </div>`;
             data.forEach(msg => {
-                chat.innerHTML += `<div>DigiBot: ${msg.text}</div>`;
+                chat.innerHTML += `<div id="bot_chat">
+                                    <span>DigiBot: ${msg.text}</span>
+                                    </div>`;
             });
         }
 
@@ -48,7 +52,7 @@
     <span id="digibot">Welcome to DigiBot!</span>
     <div id="chat"></div>
 
-    <input type="text" id="userInput" placeholder="Messagee DigiBot">
+    <input type="text" id="userInput" placeholder="Message DigiBot">
     <div class="input-container">
         <button onclick="sendMessage()">Send</button>
         <button onclick="userInput()">Clear Input</button>
@@ -59,8 +63,6 @@
 
 </html>
 
-
-
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap');
 
@@ -69,18 +71,17 @@
         text-align: center;
         width: 6em;
         border-radius: 10px;
-        /* border: 2px red solid; */
         font-family: "Palanquin", sans-serif;
         font-weight: 600;
         font-style: italic;
         color: white;
-		font-size: 30px;
+        font-size: 30px;
     }
-	
-	#digiboxx span {
-		font: 5px; 
-		color: yellow;
-	}
+
+    #digiboxx span {
+        font: 5px;
+        color: yellow;
+    }
 
     #digibot {
         font-family: sans-serif;
@@ -97,19 +98,70 @@
         height: 100vh;
         justify-content: center;
         align-items: center;
-        background-color: #e6f7ff;
+        /* background-color: #0052077b; */
+    }
+
+    #user_chat span {
+        color: white;
+        border: 2px #005b41 solid;
+        border-radius: 5px;
+        background-color: #005B41;
+    }
+
+    #user_chat {
+        margin-bottom: 10px;
+    }
+
+    #bot_chat {
+        margin-bottom: 10px;
+    }
+
+    #bot_chat span {
+        color: white;
+        border: 2px #005b41 solid;
+        border-radius: 5px;
+        background-color: #005B41;
+    }
+
+    .userchat {
+        justify-content: flex-end;
+        width: 30%;
+        margin-bottom: 5px;
+        margin-left: auto;
+        text-align: right;
+        color: #DFF5FF;
+        border: none;
+        background: #344955;
+        border-radius: 3px;
+        padding: 5px;
+    }
+
+    .botchat {
+        justify-content: flex-start;
+        width: 50%;
+        margin-bottom: 8px;
+        text-align: left;
+        color: #DFF5FF;
+        border: none;
+        background: #31363F;
+        border-radius: 3px;
+        padding: 5px;
     }
 
     #chat {
+        /* display: flex; */
         border-radius: 5px;
         width: 80%;
         height: 60%;
         overflow-y: scroll;
-        /* scrollbar-width: none; */
         padding: 10px;
         color: white;
-        background: #0000ec;
+        background: #222831;
         margin-bottom: 10px;
+    }
+
+    #chat::-webkit-scrollbar {
+        display: none;
     }
 
     .input-container {
@@ -129,10 +181,11 @@
         background-color: #ECECEC;
         border-radius: 7px;
     }
-	
-	::placeholder {
-		color: grey;
-	}
+
+    ::placeholder {
+        font-size: 17px;
+        color: grey;
+    }
 
     .button-container {
         width: 80%;
@@ -146,14 +199,224 @@
         padding: 13px 20px 13px 25px;
         border: none;
         border-radius: 10px;
-        background: #0000ec;
+        background: #222831;
         color: white;
         cursor: pointer;
     }
-	
-	button:hover {
-		background: white;
+
+    button:hover {
+        background: white;
         color: black;
-		border: 1px blue solid;
-	}
+        border: 1px grey solid;
+    }
+</style> -->
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'chatbot/style.css' %}">
+    <script>
+        async function sendMessage() {
+            const message = document.getElementById('userInput').value;
+            const response = await fetch('/chatbot/webhook/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRFToken': '{{ csrf_token }}'
+                },
+                body: JSON.stringify({ message })
+            });
+            const data = await response.json();
+            const chat = document.getElementById('chat');
+            chat.innerHTML += `<div class="chat user_chat">
+                                <span>User: ${message}</span>
+                                </div>`;
+            data.forEach(msg => {
+                chat.innerHTML += `<div class="chat bot_chat">
+                                    <span>DigiBot: ${msg.text}</span>
+                                    </div>`;
+            });
+            document.getElementById('userInput').value = '';
+        }
+
+        function userInput() {
+            const userInput = document.getElementById('userInput');
+            userInput.value = '';
+        }
+
+        function clearChat() {
+            document.getElementById('chat').innerHTML = '';
+        }
+    </script>
+</head>
+
+<body>
+    <span id="digiboxx">
+        <b>D<span style="font-size: 25px">I</span>G<span style="font-size: 25px">I</span>BOXX</b>
+    </span>
+    <br>
+    <span id="digibot">
+        DigiBot, For everyone, For every need.
+    </span>
+    <div id="chat"></div>
+
+    <input type="text" id="userInput" placeholder="Message DigiBot">
+    <div class="input-container">
+        <button onclick="sendMessage()">Send</button>
+        <button onclick="clearChat()">Clear Chat</button>
+        <button onclick="userInput()">Clear Input</button>
+    </div>
+</body>
+
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+#digiboxx {
+    background: #0000ec;
+    text-align: center;
+    width: 6em;
+    border-radius: 10px;
+    font-family: "Palanquin", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    color: white;
+    font-size: 30px;
+}
+
+#digiboxx span {
+    font: 5px;
+    color: yellow;
+}
+
+#digibot {
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    color: black;
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, sans-serif, monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6f7ff;
+}
+
+#chat {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    width: 80%;
+    border: none;
+    height: 60%;
+    overflow-y: scroll;
+    padding: 10px;
+    background: #222831;
+    margin-bottom: 10px;
+}
+
+#chat::-webkit-scrollbar {
+    display: none;
+}
+
+.chat {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.user_chat {
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.bot_chat {
+    justify-content: flex-start;
+    width: 30%;
+}
+
+.user_chat span {
+    background-color: #005B41;
+    color: white;
+    border: 2px #005b41 solid;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(75, 75, 75, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
+}
+
+.bot_chat span {
+    background-color: #344955;
+    color: white;
+    /* border: 2px #31363F solid; */
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.7), 0 4px 8px 0 rgba(75, 75, 75, 0.7);
+}
+
+.input-container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+input {
+    color: rgb(66, 66, 66);
+    height: 5%;
+    width: 79%;
+    font-size: 17px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #ECECEC;
+    border-radius: 7px;
+}
+
+::placeholder {
+    font-size: 17px;
+    color: grey;
+}
+
+.button-container {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    font-family: monospace;
+    font-size: 15px;
+    padding: 13px 20px 13px 25px;
+    border: none;
+    border-radius: 10px;
+    background: #222831;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: white;
+    color: black;
+    /* border: 1px grey solid; */
+    transition: 0.1s ease-in;
+}
+
 </style>
