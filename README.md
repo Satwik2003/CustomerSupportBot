@@ -63,6 +63,11 @@ Open your web browser and navigate to:
 http://127.0.0.1:8000/chatbot/
 or
 http://127.0.0.1:8000/
+
+```
+
 You should now see the integrated Django application with the Rasa chatbot.
 
 And we're good to go!
+
+
